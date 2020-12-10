@@ -1,0 +1,25 @@
+[{
+    "nom": "King",
+    "description": "test",
+
+    "addresser": "Laouina cite l wahat",
+
+    "disponibilite": true,
+    "price": 0,
+    "rule_id": "5faa9f9bc24bfc25b4f7aec8",
+    "total_note": 5,
+    "average_note": 3.5,
+    "equipments": ""
+}, {
+
+    "name": "house",
+    "description": "house",
+    "address": "house",
+    "nb_rooms": "house",
+    "disponibility": true,
+    "price": 0,
+    "rule_id": "5faa9f9bc24bfc25b4f7aec8",
+    "total_note": 8,
+    "average_note": 5.5,
+    "equipments": ""
+}]

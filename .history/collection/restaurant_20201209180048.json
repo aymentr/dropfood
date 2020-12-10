@@ -1,0 +1,15 @@
+[{
+    "nom": "King",
+    "description": "test",
+
+    "addresser": "Laouina cite l wahat",
+
+    "disponibilite": true,
+    "Gsm": "22946089",
+    "price": 0,
+    "images": [
+        "1", "2", "3"
+    ],
+    "total_note": 5,
+    "average_note": 3.5
+}]
