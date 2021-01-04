@@ -16,7 +16,7 @@ const UserSchema = new Schema({
     },
     username: {
         type: String,
-        required: true
+        required: false
     },
     password: {
         type: String,
@@ -49,4 +49,4 @@ const UserSchema = new Schema({
     },
 }, { timestamps: true });
 
-module.exports = model("User", UserSchema);
+module.exports = model("user", UserSchema);

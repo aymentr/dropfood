@@ -1,4 +1,4 @@
-const User = require("../models/user");
+const User = require("../models/User");
 const { SECRET } = require("../config");
 const { Strategy, ExtractJwt } = require("passport-jwt");
 
@@ -10,7 +10,7 @@ const opts = {
 module.exports = passport => {
     passport.use(
         new Strategy(opts, async(payload, done) => {
-            await user.findById(payload.user_id)
+            await User.findById(payload.user_id)
                 .then(user => {
                     if (user) {
                         return done(null, user);

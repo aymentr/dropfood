@@ -1,7 +1,7 @@
 const router = require("express").Router();
 // Bring in the User Registration function
 const {
-    userAuth,
+
     userLogin,
     checkRole,
     userRegister,

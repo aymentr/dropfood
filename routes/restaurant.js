@@ -7,8 +7,13 @@ const {
 const {
     FetchRestaurant,
     DeleteRestaurant,
-    ADDRestaurant
-    
+    ADDRestaurant,
+    FetchRestaurantByAddress,
+    FetchRestaurantsByName,
+    ADDMenuRestaurant,
+    DeleteMenu
+
+
 
 } = require("../utils/restaurant");
 
@@ -29,10 +34,24 @@ router.post("/add-Restaurant", async(req, res) => {
 router.delete("/delete-Restaurant/:id", async(req, res) => {
     return await DeleteRestaurant(req, res);
 });
+router.put("/UpdateResto/:id", async(req, res) => {
+    return await UpdateRestaurant(req, res);
+});
 
-//Update restaurant Router
+router.get("/addresser", async(req, res) => {
+    return await FetchRestaurantByAddress(req, res);
+});
+router.get("/nom", async(req, res) => {
+    return await FetchRestaurantByName(req, res);
+});
 
 
+router.post("/add-menu", async(req, res) => {
+    return await ADDMenuRestaurant(req, res);
+});
+router.delete("/delete-menu/:id", async(req, res) => {
+    return await DeleteMenu(req, res);
+});
 
 
 

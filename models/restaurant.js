@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const RestaurantSchema = new Schema({
     id: {
         type: String,
-        required: true
+        required: false
     },
     nom: {
         type: String,
@@ -25,11 +25,9 @@ const RestaurantSchema = new Schema({
         type: String,
         required: false
     },
-
-
     images: {
         type: Array,
-        required: true
+        required: false
     },
 
     total_note: {

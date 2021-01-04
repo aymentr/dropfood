@@ -1,10 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const CommandeSchema = new Schema({
-    id_Restaurant: {
-        type: String,
-        required: true
-    },
+   
     Date: {
         type: Date,
         required: true

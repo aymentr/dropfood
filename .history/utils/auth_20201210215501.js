@@ -22,7 +22,6 @@ const userRegister = async(userDets, role, res) => {
 
         // validate the email
         let emailNotRegistered = await validateEmail(userDets.email);
-        console.log(userDets.email)
         if (!emailNotRegistered) {
             return res.status(400).json({
                 message: `Email is already registered.`,
@@ -126,14 +125,14 @@ const updateProfile = async(req, res) => {
                     success: false
                 });
             } else {
+                if (req.body.address) {
+                    foundObject.address = req.body.address
+                }
                 if (req.body.name) {
                     foundObject.name = req.body.name
                 }
                 if (req.body.email) {
                     foundObject.email = req.body.email
-                }
-                if (req.body.username) {
-                    foundObject.username = req.body.username
                 }
                 if (req.body.password) {
                     foundObject.password = req.body.password
